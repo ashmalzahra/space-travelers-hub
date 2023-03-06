@@ -1,0 +1,8 @@
+a {
+    color: #333;
+    text-decoration: none;
+  }
+  /* Active route */
+  .active {
+    text-decoration: underline;
+  }

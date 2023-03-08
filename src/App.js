@@ -3,13 +3,12 @@ import './App.css';
 import Rockets from './components/Rockets';
 import Missions from './components/Missions';
 import Profile from './components/myProfile';
-import Layout from './components/Layout';
-
+import Header from './components/Header';
 
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Layout />}>
+      <Route path="/" element={<Header />}>
       <Route path="/" element={<Rockets />} />
       <Route path="missions" element={<Missions />} />
       <Route path="profile" element={<Profile />} />

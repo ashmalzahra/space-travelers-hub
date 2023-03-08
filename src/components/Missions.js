@@ -1,6 +1,8 @@
 const Missions = () => {
     return(
-        <></>
+        <>
+        <h1>Testing Nav-mission</h1>
+        </>
     )
 }
 

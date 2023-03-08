@@ -26,7 +26,7 @@ const Rockets = () => {
           key={item.id}
           id={item.id}
           image={item.flickr_images}
-          name={item.name}
+          name={item.rocket_name}
           type={item.description}
         />
       ))

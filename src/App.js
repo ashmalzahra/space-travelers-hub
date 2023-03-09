@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Rockets from './components/Rockets';
-import Missions from './components/Missions';
+import MissionsContainer from './components/MissionContaier';
 import Profile from './components/myProfile';
 import Header from './components/Header';
 
@@ -10,7 +10,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Header />}>
       <Route path="/" element={<Rockets />} />
-      <Route path="missions" element={<Missions />} />
+      <Route path="missions" element={<MissionsContainer />} />
       <Route path="profile" element={<Profile />} />
       </Route>
     </Routes>

@@ -10,7 +10,7 @@ function Navbar() {
                 <h1>Traverlers Hub</h1>
             </div>
             <nav className="NavLinks">
-                <NavLink to="" end className={({isActive}) => (isActive ? 'currentPage' : undefined)}>Rockets</NavLink>
+                <NavLink to="rockets" end className={({isActive}) => (isActive ? 'currentPage' : undefined)}>Rockets</NavLink>
                 <NavLink to="missions" end className={({isActive}) => (isActive ? 'currentPage' : undefined)}>Missions</NavLink>
                 <NavLink to="profile" end className={({isActive}) => (isActive ? 'currentPage' : undefined)}>My Profile</NavLink>
             </nav>

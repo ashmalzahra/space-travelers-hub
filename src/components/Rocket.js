@@ -2,13 +2,17 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import Button from 'react-bootstrap/Button';
 import './Rocket.css'
-import { reserveRocket } from '../redux/RocketsSlice';
+import { reserveRocket, cancelReserveRocket } from '../redux/RocketsSlice';
 
-const Rocket = ({rocket, reserved= false,}) => {
+const Rocket = ({rocket}) => {
     const dispatch = useDispatch();
 
     const reserveRocketHandler = (id) => {
     dispatch(reserveRocket(id));
+  };
+
+  const cancelRocketHandler = (id) => {
+    dispatch(cancelReserveRocket(id));
   };
 
     return(
@@ -18,7 +22,8 @@ const Rocket = ({rocket, reserved= false,}) => {
                     <h3 className="title">{rocket.rocket_name}</h3>
                     {rocket.reserved === true && <button>Reserved</button>}
                     <p className="description">{rocket.description}</p>
-                    <Button variant="primary" id={rocket.rocket_id} onClick={() => reserveRocketHandler(rocket.rocket_id)}>Reserve Rocket</Button>
+                    {rocket.reserved === true ? (<Button variant="primary" id={rocket.rocket_id} onClick={() => cancelRocketHandler(rocket.rocket_id)}>Cancel Reservation</Button> ) :
+                    (<Button variant="primary" id={rocket.rocket_id} onClick={() => reserveRocketHandler(rocket.rocket_id)}>Reserve Rocket</Button>)}
                 </div>
             </div>
         )

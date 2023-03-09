@@ -36,6 +36,15 @@ const initialState = {
         });
         return { ...state, rockets: newArray };
       },
+      cancelReserveRocket:  (state, action) => {
+        const newArray = state.rockets.map((item) => {
+          if (item.rocket_id === action.payload) {
+            return { ...item, reserved: false };
+          }
+          return item;
+        });
+        return { ...state, rockets: newArray };
+      },
     },
     extraReducers: {
       [fetchRockets.pending]: (state) => ({
@@ -55,6 +64,6 @@ const initialState = {
     },
   });
   
-  export const { reserveRocket } = RocketsSlice.actions;
+  export const { reserveRocket, cancelReserveRocket } = RocketsSlice.actions;
   export { fetchRockets };
   export default RocketsSlice.reducer;

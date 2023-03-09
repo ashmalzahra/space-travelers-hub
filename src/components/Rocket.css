@@ -20,6 +20,10 @@
     font-size: 20px;
   }
 
-  .btn-primary{
+  .btn-primary, .btn-light{
     margin-left: 2.5%;
+  }
+
+  .btn-success{
+    margin-right: 1.5%;
   }

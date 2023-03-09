@@ -23,11 +23,8 @@ const Rockets = () => {
 } else if (ifSucceed) {
     content = rockets.map((item) => (
         <Rocket
-          key={item.id}
-          id={item.id}
-          image={item.flickr_images}
-          name={item.rocket_name}
-          type={item.description}
+          key={item.rocket_id}
+          rocket={item}
         />
       ))
     } else {

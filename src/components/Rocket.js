@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import Button from 'react-bootstrap/Button';
 import './Rocket.css'
-import { reserveRocket, cancelReserveRocket } from '../redux/RocketsSlice';
+import { reserveRocket, cancelReserveRocket } from '../Redux/RocketsSlice';
 
 const Rocket = ({rocket}) => {
     const dispatch = useDispatch();

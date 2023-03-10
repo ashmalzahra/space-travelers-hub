@@ -1,3 +1,5 @@
+import React from "react";
+import MissionsProfile from "./MissionsProfile";
 import { useSelector } from "react-redux"
 import Joined from "./display"
 
@@ -7,10 +9,11 @@ const Profile = () => {
     const reservedRockets = Rockets.filter((rocket) => rocket.reserved === true)
 
     return(
-        <>
-        <Joined myRockets= {reservedRockets} />
-        </>
+        <div className="profile-container">
+            <Joined myRockets= {reservedRockets} />
+        <MissionsProfile />
+        </div>
     )
 }
 
-export default Profile
+export default Profile;

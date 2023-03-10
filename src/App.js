@@ -1,9 +1,10 @@
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Rockets from './components/Rockets';
-import MissionsContainer from './components/MissionContaier';
+import MissionsContainer from './components/MissionsContainer';
 import Profile from './components/myProfile';
 import Header from './components/Header';
+import './Myprofile.css';
 
 function App() {
   return (

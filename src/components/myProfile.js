@@ -1,4 +1,5 @@
 import { useSelector } from "react-redux"
+import Joined from "./display"
 
 
 const Profile = () => {
@@ -7,14 +8,7 @@ const Profile = () => {
 
     return(
         <>
-        <h3>My Rockets</h3>
-        <ul>
-                {
-                    reservedRockets.map((rocket) => {
-                        <li key={rocket.rocket_id}>{rocket.rocket_name}</li>
-                    })
-                }
-            </ul>
+        <Joined myRockets= {reservedRockets} />
         </>
     )
 }

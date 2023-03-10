@@ -1,16 +1,30 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
 import Button from 'react-bootstrap/Button';
 import './Rocket.css'
+import { reserveRocket, cancelReserveRocket } from '../redux/RocketsSlice';
 
-const Rocket = ({id, name, type, image}) => {
+const Rocket = ({rocket}) => {
+    const dispatch = useDispatch();
+
+    const reserveRocketHandler = (id) => {
+    dispatch(reserveRocket(id));
+  };
+
+  const cancelRocketHandler = (id) => {
+    dispatch(cancelReserveRocket(id));
+  };
 
     return(
-            <div className="container">
-                <img src={image} alt={name} className="pic"/>
+            <div className="container" id={rocket.rocket_id}>
+                <img src={rocket.flickr_images} alt={rocket.rocket_name} className="pic"/>
                 <div>
-                    <h3 className="title">{name}</h3>
-                    <p className="description">{type}</p>
-                    <Button variant="primary" id={id}>Reserve Rocket</Button>
+                    <h3 className="title">{rocket.rocket_name}</h3>
+                    <p className="description">
+                      {rocket.reserved === true && <Button variant="success">Reserved</Button>}
+                      {rocket.description}</p>
+                    {rocket.reserved === true ? (<Button variant="light" id={rocket.rocket_id} onClick={() => cancelRocketHandler(rocket.rocket_id)}>Cancel Reservation</Button> ) :
+                    (<Button variant="primary" id={rocket.rocket_id} onClick={() => reserveRocketHandler(rocket.rocket_id)}>Reserve Rocket</Button>)}
                 </div>
             </div>
         )

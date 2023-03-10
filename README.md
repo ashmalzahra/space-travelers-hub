@@ -100,7 +100,7 @@ Clone this repository to get started with the project, make sure to configure li
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/ashmalzahra/math-magicians/issues).
+Feel free to check the [issues page](https://github.com/ashmalzahra/space-travelers-hub/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

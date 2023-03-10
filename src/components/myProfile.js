@@ -1,4 +1,3 @@
-import React from "react";
 import MissionsProfile from "./MissionsProfile";
 import Joined from "./RocketProfile";
 

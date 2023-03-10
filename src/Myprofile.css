@@ -1,0 +1,25 @@
+.profile-container {
+  display: flex;
+  margin: 40px;
+}
+.profile-missions-title {
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+  .profile-missions {
+    border: 1.5px solid #e8e8e8;
+  }
+  
+  .no-reserve {
+    padding: 15px;
+    margin: 0;
+  }
+
+  .reserve-item {
+    border-bottom: 1.5px solid #e8e8e8;
+    padding: 15px;
+  }
+.reserve-container {
+    width: 45%;
+  }

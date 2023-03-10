@@ -1,9 +1,12 @@
+import React from "react";
+import MissionsProfile from "./MissionsProfile";
+
 const Profile = () => {
     return(
-        <>
-        <h2>My profile</h2>
-        </>
+        <div className="profile-container">
+        <MissionsProfile />
+        </div>
     )
 }
 
-export default Profile
+export default Profile;

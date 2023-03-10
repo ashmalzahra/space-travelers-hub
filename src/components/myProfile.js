@@ -1,7 +1,14 @@
+import { useSelector } from "react-redux"
+import Joined from "./display"
+
+
 const Profile = () => {
+    const Rockets = useSelector((state) => state.rockets.rockets)
+    const reservedRockets = Rockets.filter((rocket) => rocket.reserved === true)
+
     return(
         <>
-        <h2>My profile</h2>
+        <Joined myRockets= {reservedRockets} />
         </>
     )
 }

@@ -19,7 +19,17 @@
   .reserve-item {
     border-bottom: 1.5px solid #e8e8e8;
     padding: 15px;
+    list-style: none;
   }
+
+  ul{
+    padding-left: 0;
+  }
+
 .reserve-container {
     width: 45%;
+  }
+
+  #container{
+    margin-left: 5%;
   }

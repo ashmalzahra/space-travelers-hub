@@ -10,8 +10,10 @@ const Rockets = () => {
     const rockets = useSelector((store) => store.rockets.rockets);
 
     useEffect(() => {
-        dispatch(fetchRockets());
-      }, [ifSucceed, dispatch]);
+       if(rockets.length === 0){
+        dispatch(fetchRockets())
+       }
+      }, [dispatch,ifSucceed,rockets])
 
       let content;
   if (isLoading) {

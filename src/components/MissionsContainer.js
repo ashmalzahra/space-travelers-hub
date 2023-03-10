@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Container, Table } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchMissions } from "../redux/MissionsSlice";
+import { fetchMissions } from "../Redux/MissionsSlice";
 import Mission from "./Missions";
 
 const MissionsContainer = () => {

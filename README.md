@@ -91,6 +91,12 @@ Clone this repository to get started with the project, make sure to configure li
 - Twitter: [@twitterhandle](https://twitter.com/AshmalZahraa)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/ashmal-zahra)
 
+👤 **Emmanuel Balikuddembe**
+
+- GitHub: [@githubhandle](https://github.com/Balikuddembe)
+- Twitter: [@twitterhandle](https://twitter.com/BalixEmma)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/emmanuelbalikuddembe/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->

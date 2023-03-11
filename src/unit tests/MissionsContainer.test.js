@@ -42,8 +42,12 @@ describe('MissionsContainer', () => {
   test('renders missions table', () => {
     // Set up the mock state and dispatch function
     const mockMissions = [
-      { mission_id: 'mission1', mission_name: 'Mission 1', description: 'Mission 1 description', reserved: true },
-      { mission_id: 'mission2', mission_name: 'Mission 2', description: 'Mission 2 description', reserved: false },
+      {
+        mission_id: 'mission1', mission_name: 'Mission 1', description: 'Mission 1 description', reserved: true,
+      },
+      {
+        mission_id: 'mission2', mission_name: 'Mission 2', description: 'Mission 2 description', reserved: false,
+      },
     ];
     const mockDispatch = jest.fn();
 
@@ -66,4 +70,3 @@ describe('MissionsContainer', () => {
     expect(mockDispatch).toHaveBeenCalledTimes(1);
   });
 });
-

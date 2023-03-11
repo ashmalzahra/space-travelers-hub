@@ -1,4 +1,4 @@
-import React from 'react';
+/* eslint-disable react/prop-types */
 import { useDispatch } from 'react-redux';
 import Button from 'react-bootstrap/Button';
 import './Rocket.css';

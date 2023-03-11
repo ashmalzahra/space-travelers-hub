@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import { useSelector } from 'react-redux';
 import MissionsProfile from './MissionsProfile';
@@ -15,4 +16,16 @@ const Profile = () => {
   );
 };
 
+=======
+import MissionsProfile from './MissionsProfile';
+import Joined from './RocketProfile';
+
+const Profile = () => (
+  <div className="profile-container">
+    <MissionsProfile />
+    <Joined />
+  </div>
+);
+
+>>>>>>> 9add45350724ad927b921ddfda852e38054be055
 export default Profile;

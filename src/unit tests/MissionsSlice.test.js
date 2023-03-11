@@ -43,16 +43,24 @@ describe('missionsSlice', () => {
     it('should toggle reserved property of mission with given id', () => {
       const initialState = {
         missions: [
-          { mission_id: 'mission-1', mission_name: 'Mission 1', description: 'Mission 1 description', reserved: false },
-          { mission_id: 'mission-2', mission_name: 'Mission 2', description: 'Mission 2 description', reserved: false },
+          {
+            mission_id: 'mission-1', mission_name: 'Mission 1', description: 'Mission 1 description', reserved: false,
+          },
+          {
+            mission_id: 'mission-2', mission_name: 'Mission 2', description: 'Mission 2 description', reserved: false,
+          },
         ],
       };
 
       const missionId = 'mission-1';
       const expectedState = {
         missions: [
-          { mission_id: 'mission-1', mission_name: 'Mission 1', description: 'Mission 1 description', reserved: true },
-          { mission_id: 'mission-2', mission_name: 'Mission 2', description: 'Mission 2 description', reserved: false },
+          {
+            mission_id: 'mission-1', mission_name: 'Mission 1', description: 'Mission 1 description', reserved: true,
+          },
+          {
+            mission_id: 'mission-2', mission_name: 'Mission 2', description: 'Mission 2 description', reserved: false,
+          },
         ],
       };
 

@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar renders correctly 1`] = `
+<div
+  className="NavBar"
+>
+  <div
+    className="LogoContainer"
+  >
+    <img
+      alt="planet-logo"
+      className="planet"
+      src="planet.png"
+    />
+    <h1>
+      Traverlers Hub
+    </h1>
+  </div>
+  <nav
+    className="NavLinks"
+  >
+    <a
+      aria-current="page"
+      className="currentPage"
+      href="/"
+      onClick={[Function]}
+    >
+      Rockets
+    </a>
+    <a
+      href="/missions"
+      onClick={[Function]}
+    >
+      Missions
+    </a>
+    <a
+      href="/profile"
+      onClick={[Function]}
+    >
+      My Profile
+    </a>
+  </nav>
+</div>
+`;
+
+exports[`Rocket renders as expected 1`] = `
+<div
+  className="container"
+  id="falcon1"
+>
+  <img
+    alt="Falcon 1"
+    className="pic"
+  />
+  <div>
+    <h3
+      className="title"
+    >
+      Falcon 1
+    </h3>
+    <p
+      className="description"
+    />
+    <button
+      className="btn btn-primary"
+      disabled={false}
+      id="falcon1"
+      onClick={[Function]}
+      type="button"
+    >
+      Reserve Rocket
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Rocket reserved displayed in profile 1`] = `
+<div
+  className="reserve-container"
+  id="container"
+>
+  <h1
+    className="profile-missions-title"
+  >
+    My Rockets
+  </h1>
+  <ul
+    className="profile-missions"
+  >
+    <p
+      className="no-reserve"
+    >
+      No Rockets Reserved
+    </p>
+  </ul>
+</div>
+`;
+
+exports[`Rockets rendered correctly 1`] = `
+<div>
+  <div>
+    <p>
+      Something went wrong...
+    </p>
+  </div>
+</div>
+`;

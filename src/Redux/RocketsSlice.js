@@ -45,21 +45,22 @@ const RocketsSlice = createSlice({
       return { ...state, rockets: newArray };
     },
   },
-  extraReducers: {
-    [fetchRockets.pending]: (state) => ({
-      ...state,
-      isLoading: true,
-    }),
-    [fetchRockets.fulfilled]: (state, action) => ({
-      ...state,
-      isLoading: false,
-      ifSucceed: true,
-      rockets: action.payload,
-    }),
-    [fetchRockets.rejected]: (state) => ({
-      ...state,
-      isLoading: false,
-    }),
+  extraReducers: (builder) => {
+    builder
+      .addCase(fetchRockets.pending, (state) => ({
+        ...state,
+        isLoading: true,
+      }))
+      .addCase(fetchRockets.fulfilled, (state, action) => ({
+        ...state,
+        isLoading: false,
+        ifSucceed: true,
+        rockets: action.payload,
+      }))
+      .addCase(fetchRockets.rejected, (state) => ({
+        ...state,
+        isLoading: false,
+      }));
   },
 });
 

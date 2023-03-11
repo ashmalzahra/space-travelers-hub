@@ -12,6 +12,7 @@
   - [Setup](#setup)
   - [Run tests](#run-tests)
 - [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [📝 License](#license)
@@ -99,6 +100,10 @@ Clone this repository to get started with the project, make sure to configure li
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **Advanced styling**
+- [ ] **Animations**
 <!-- CONTRIBUTING -->
 
 ## 🤝 Contributing

@@ -12,7 +12,6 @@
   - [Setup](#setup)
   - [Run tests](#run-tests)
 - [👥 Authors](#authors)
-- [🔭 Future Features ](#-future-features-)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [📝 License](#license)

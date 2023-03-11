@@ -1,16 +1,11 @@
-import React from "react";
-import MissionsProfile from "./MissionsProfile";
-import Joined from "./RocketProfile";
+import MissionsProfile from './MissionsProfile';
+import Joined from './RocketProfile';
 
-
-const Profile = () => {
-
-    return(
-        <div className="profile-container">
-        <MissionsProfile />
-        <Joined />
-        </div>
-    )
-}
+const Profile = () => (
+  <div className="profile-container">
+    <MissionsProfile />
+    <Joined />
+  </div>
+);
 
 export default Profile;

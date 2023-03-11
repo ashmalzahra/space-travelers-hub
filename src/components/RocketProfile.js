@@ -1,24 +1,22 @@
-import React from "react";
-import { useSelector } from "react-redux";
+import { useSelector } from 'react-redux';
 
 const Joined = () => {
-  const Rockets = useSelector((state) => state.rockets.rockets)
-  const reservedRockets = Rockets.filter((rocket) => rocket.reserved === true)
+  const Rockets = useSelector((state) => state.rockets.rockets);
+  const reservedRockets = Rockets.filter((rocket) => rocket.reserved === true);
 
-    return (
+  return (
     <div className="reserve-container" id="container">
-        <h1 className="profile-missions-title">My Rockets</h1>
-        <ul className="profile-missions">
+      <h1 className="profile-missions-title">My Rockets</h1>
+      <ul className="profile-missions">
         {reservedRockets.length === 0 && <p className="no-reserve">No Rockets Reserved</p>}
-          {reservedRockets.map((rocket) => (
-            <li className="reserve-item" key={rocket.rocket_id}>
-              {rocket.rocket_name}
-            </li>
-          ))}
-        </ul>
+        {reservedRockets.map((rocket) => (
+          <li className="reserve-item" key={rocket.rocket_id}>
+            {rocket.rocket_name}
+          </li>
+        ))}
+      </ul>
     </div>
-    );
-  }
-    
+  );
+};
 
-  export default Joined;
+export default Joined;

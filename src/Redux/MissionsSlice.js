@@ -15,21 +15,24 @@ const missionsSlice = createSlice({
   initialState,
   reducers: {
     toogleReserve: (state, { payload }) => {
-      state.missions = state.missions.map((mission) => { // eslint-disable-line no-param-reassign
+      const updatedMissions = state.missions.map((mission) => {
         if (mission.mission_id === payload) {
           return { ...mission, reserved: !mission.reserved };
-        } return mission;
+        }
+        return mission;
       });
+      return { ...state, missions: updatedMissions };
     },
-  }, /* eslint-disable no-param-reassign */
+  },
 
   extraReducers: (builder) => {
     builder
       .addCase(fetchMissions.fulfilled, (state, { payload }) => {
-        state.missions = payload.map((x) => ({ ...x, reserved: false }));
+        const updatedMissions = payload.map((x) => ({ ...x, reserved: false }));
+        return { ...state, missions: updatedMissions };
       });
   },
-}); /* eslint-enable no-param-reassign */
+});
 
 export const { toogleReserve } = missionsSlice.actions;
 export default missionsSlice;

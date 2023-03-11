@@ -9,7 +9,7 @@ const MissionsProfile = () => {
       <h1 className="profile-missions-title">My Missions</h1>
       <div className="profile-missions">
         {reservedMissions.length === 0 && <p className="no-reserve">No Mission Reserved</p>}
-        {reservedMissions.map((x) => (
+        {reservedMissions.filter((x) => x.mission_id !== undefined).map((x) => (
           <div key={x.mission_id} className="reserve-item">{x.mission_name}</div>
         ))}
 

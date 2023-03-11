@@ -10,11 +10,11 @@ function App() {
   return (
     <div>
       <Navbar />
-    <Routes>
-      <Route index element={<Rockets />} />
-      <Route path="/missions" element={<MissionsContainer />} />
-      <Route path="/profile" element={<Profile />} />
-    </Routes>
+      <Routes>
+        <Route index element={<Rockets />} />
+        <Route path="/missions" element={<MissionsContainer />} />
+        <Route path="/profile" element={<Profile />} />
+      </Routes>
     </div>
   );
 }

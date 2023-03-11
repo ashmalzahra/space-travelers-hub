@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rockets rendered correctly 1`] = `
+<div>
+  <div>
+    <p>
+      Something went wrong...
+    </p>
+  </div>
+</div>
+`;

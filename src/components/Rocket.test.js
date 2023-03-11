@@ -2,14 +2,19 @@ import { Provider } from 'react-redux';
 import { MemoryRouter } from 'react-router-dom';
 import renderer from 'react-test-renderer';
 import store from '../Redux/store';
-import Joined from './RocketProfile';
+import Rocket from './Rocket';
 
-test('Rocket reserved displayed in profile', () => {
+const obj = {
+    rocket_name: 'Falcon 1',
+    rocket_id: 'falcon1',
+}
+
+test('Rocket renders as expected', () => {
   const configureStore = store;
   const component = renderer.create(
     <Provider store={configureStore}>
       <MemoryRouter>
-        <Joined />
+        <Rocket key={obj.rocket_id} rocket={obj}/>
       </MemoryRouter>
     </Provider>,
   );

@@ -15,13 +15,13 @@ const missionsSlice = createSlice({
   initialState,
   reducers: {
     toogleReserve: (state, { payload }) => {
-      state.missions = state.missions.map((mission) => {
+      state.missions = state.missions.map((mission) => { // eslint-disable-line no-param-reassign
         if (mission.mission_id === payload) {
           return { ...mission, reserved: !mission.reserved };
         } return mission;
       });
     },
-  },
+  }, /* eslint-disable no-param-reassign */
 
   extraReducers: (builder) => {
     builder
@@ -29,6 +29,7 @@ const missionsSlice = createSlice({
         state.missions = payload.map((x) => ({ ...x, reserved: false }));
       });
   },
+  /* eslint-enable no-param-reassign */
 });
 
 export const { toogleReserve } = missionsSlice.actions;

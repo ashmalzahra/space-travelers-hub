@@ -10,10 +10,10 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Header />}>
-      <Route path="/" element={<Rockets />} />
-      <Route path="rockets" element={<Rockets />} />
-      <Route path="missions" element={<MissionsContainer />} />
-      <Route path="profile" element={<Profile />} />
+        <Route path="/" element={<Rockets />} />
+        <Route path="rockets" element={<Rockets />} />
+        <Route path="missions" element={<MissionsContainer />} />
+        <Route path="profile" element={<Profile />} />
       </Route>
     </Routes>
   );

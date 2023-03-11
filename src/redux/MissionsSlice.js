@@ -29,7 +29,6 @@ const missionsSlice = createSlice({
         state.missions = payload.map((x) => ({ ...x, reserved: false }));
       });
   },
-  /* eslint-enable no-param-reassign */
 });
 
 export const { toogleReserve } = missionsSlice.actions;

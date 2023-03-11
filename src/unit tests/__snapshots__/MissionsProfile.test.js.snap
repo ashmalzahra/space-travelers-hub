@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render 1`] = `
+<div
+  className="reserve-container"
+>
+  <h1
+    className="profile-missions-title"
+  >
+    My Missions
+  </h1>
+  <div
+    className="profile-missions"
+  >
+    <p
+      className="no-reserve"
+    >
+      No Mission Reserved
+    </p>
+  </div>
+</div>
+`;

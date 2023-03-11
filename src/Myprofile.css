@@ -2,34 +2,35 @@
   display: flex;
   margin: 40px;
 }
+
 .profile-missions-title {
-    font-size: 30px;
-    font-weight: 400;
-  }
+  font-size: 30px;
+  font-weight: 400;
+}
 
-  .profile-missions {
-    border: 1.5px solid #e8e8e8;
-  }
-  
-  .no-reserve {
-    padding: 15px;
-    margin: 0;
-  }
+.profile-missions {
+  border: 1.5px solid #e8e8e8;
+}
 
-  .reserve-item {
-    border-bottom: 1.5px solid #e8e8e8;
-    padding: 15px;
-    list-style: none;
-  }
+.no-reserve {
+  padding: 15px;
+  margin: 0;
+}
 
-  ul{
-    padding-left: 0;
-  }
+.reserve-item {
+  border-bottom: 1.5px solid #e8e8e8;
+  padding: 15px;
+  list-style: none;
+}
+
+ul {
+  padding-left: 0;
+}
 
 .reserve-container {
-    width: 45%;
-  }
+  width: 45%;
+}
 
-  #container{
-    margin-left: 5%;
-  }
+#container {
+  margin-left: 5%;
+}

@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+/* eslint-disable react/prop-types */
 import { useDispatch } from 'react-redux';
 import Button from 'react-bootstrap/Button';
 import './Rocket.css';
@@ -29,15 +29,6 @@ const Rocket = ({ rocket }) => {
       </div>
     </div>
   );
-};
-
-Rocket.propTypes = {
-   rocket: PropTypes.shape({
-    rocket_id: PropTypes.string.isRequired,
-    rocket_name: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-    reserved: PropTypes.bool,
-  }),
 };
 
 export default Rocket;

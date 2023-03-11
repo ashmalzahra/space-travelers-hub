@@ -5,16 +5,16 @@ import store from '../Redux/store';
 import Rocket from './Rocket';
 
 const obj = {
-    rocket_name: 'Falcon 1',
-    rocket_id: 'falcon1',
-}
+  rocket_name: 'Falcon 1',
+  rocket_id: 'falcon1',
+};
 
 test('Rocket renders as expected', () => {
   const configureStore = store;
   const component = renderer.create(
     <Provider store={configureStore}>
       <MemoryRouter>
-        <Rocket key={obj.rocket_id} rocket={obj}/>
+        <Rocket key={obj.rocket_id} rocket={obj} />
       </MemoryRouter>
     </Provider>,
   );

@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+.pic {
+  max-width: 275px;
+}
+
+.title {
+  margin-left: 2.5%;
+}
+
+.description {
+  margin-left: 2.5%;
+  font-size: 20px;
+}
+
+.btn-primary,
+.btn-light {
+  margin-left: 2.5%;
+}
+
+.btn-success {
+  margin-right: 1.5%;
+}

@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render 1`] = `
+<div
+  className="table-responsive-sm container-fluid"
+>
+  <table
+    className="my-3 table-bordered table-striped table"
+  >
+    <thead>
+      <tr>
+        <td>
+          <b>
+            Mission
+          </b>
+        </td>
+        <td>
+          <b>
+            Description
+          </b>
+        </td>
+        <td>
+          <b>
+            Status
+          </b>
+        </td>
+        <td />
+      </tr>
+    </thead>
+    <tbody />
+  </table>
+</div>
+`;
